@@ -1,0 +1,40 @@
+way=int(input("버스를 이용하는 방식은 무엇입니까? (1=현금, 2=버스카드): "))
+if way==1:
+    money=int(input("얼마를 가지고 있습니까? (원 단위): "))
+    age=int(input("나이를 입력하시오. (만 나이): "))
+    num=int(input("버스를 탄 횟수를 입력하시오: "))
+    a=0
+    b=0
+    c=0
+    if 12<age<19:
+        a=900
+        x=money-a*num
+        print("잔액은",str(x),"원입니다.")
+    elif age>=19:
+        b=1200
+        x=money-b*num
+        print("잔액은",str(x),"원입니다.")
+    else:
+        c=400
+        x=money-c*num
+        print("잔액은",str(x),"원입니다.")
+if way==2:
+    don=int(input("얼마를 충전했습니까? : "))
+    age=int(input("나이를 입력하시오. (만 나이): "))
+    num=int(input("버스를 탄 횟수를 입력하시오.: "))
+    h=int(input("몇 번 환승했습니까?: "))
+    a=0
+    b=0
+    c=0
+    if age<13:
+        a=350
+        x=money-a*num
+        print("버스 카드의 잔액은",str(x),"원 입니다.")
+    elif age<=19:
+        b=850
+        x=money-b*num
+        print("버스 카드의 잔액은",str(x),"원 입니다.")
+    else:
+        c=1150
+        x=money-c*num
+        print("버스 카드의 잔액은",str(x),"원 입니다.")        
