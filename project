@@ -9,15 +9,15 @@ if way==1:
     if 12<age<19:
         a=900
         x=money-a*num
-        print("잔액은",str(x),"원입니다.")
+        print("잔액은"+str(x)+"원입니다.")
     elif age>=19:
         b=1200
         x=money-b*num
-        print("잔액은",str(x),"원입니다.")
+        print("잔액은"+str(x)+"원입니다.")
     else:
         c=400
         x=money-c*num
-        print("잔액은",str(x),"원입니다.")
+        print("잔액은"+str(x)+"원입니다.")
 if way==2:
     don=int(input("얼마를 충전했습니까?(원 단위) : "))
     age=int(input("나이를 입력하시오(만 나이): "))
@@ -28,13 +28,13 @@ if way==2:
     c=0
     if age<13:
         a=350
-        x=money-a*num+h*350
-        print("버스 카드의 잔액은",str(x),"원 입니다.")
+        x=money-a*num-h*350
+        print("버스 카드의 잔액은"+str(x)+"원 입니다.")
     elif age>=19:
         b=1150
-        x=money-b*num+h*1150
-        print("버스 카드의 잔액은",str(x),"원 입니다.")
+        x=money-b*num-h*1150
+        print("버스 카드의 잔액은"+str(x)+"원 입니다.")
     else:
         c=850
-        x=money-c*num+h*850
-        print("버스 카드의 잔액은",str(x),"원 입니다.")
+        x=money-c*num-h*850
+        print("버스 카드의 잔액은"+str(x)+"원 입니다.")
